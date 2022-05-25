@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="DivFecha">
+        
+        <script type="text/javascript">
+        date = new Date().toLocaleDateString();
+     
+        document.write(date);
+       
+        </script>
+           <script type="text/javascript">
+            function startTime(){
+            today=new Date();
+            h=today.getHours();
+            m=today.getMinutes();
+            s=today.getSeconds();
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+            t=setTimeout('startTime()',500);}
+            function checkTime(i)
+            {if (i<10) {i="0" + i;}return i;}
+            window.onload=function(){startTime();}
+            
+            </script>
+            <div id="reloj"></div>
+                
+    </div>
+
+<div class="ImagenDiv">
+    <H1>IMAGEN</H1>
+</div>
+   
+        <nav>
+            <div class="Navbar">
+                <h4>Daniel Admin</h4>
+                <button class="CerrarSesion">Cerrar Sesion
+
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+        </div>
+        </nav>
+        
+
+
+</body>
+</html>

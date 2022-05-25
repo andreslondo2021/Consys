@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-image: url(../Img/LogoConsys.jpeg);
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size:cover;
+  }
+  .DivFecha{
+    padding:1%;
+    height: 2%;
+    font-size: large;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+.ImagenDiv{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.Navbar{
+    background-color: #39ace7;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h4{
+    padding-left: 2%;
+    text-transform:inherit;
+ text-decoration:wavy;
+ color: black;
+ text-decoration:dotted;
+ font-size: x-large;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+ nav .CerrarSesion{
+
+    float: right;
+    margin-top: 5px;
+    margin-left: 4%;
+    color: azure;
+    background-color: #39ace7;
+    border-color: #39ace7;
+    padding-right: 2%;
+    transition-duration: 0.4s;
+    text-align: center;
+    border-color:#39ace7 ;
+    
+
+}
+.CerrarSesion:hover{
+    background-color: #C3CC5B;
+    box-shadow: 0 12px 16px 0 #C3CC5B, 0 17px 50px 0 #C3CC5B;
+    border-color:#C3CC5B;
+
+}
+.DivFecha{
+    padding-left: 2%;
+
+
+
+}
+
+
+
+
