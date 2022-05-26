@@ -1,159 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Menú despegable</title>
     <link rel="stylesheet" href="../Css/SideBar.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>Sidebar</title>
 </head>
 <body>
-
     
-   
+    <nav class="nav">
+        <ul class="list">
 
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="../Img/IconUser.ico" class="list__img" height="40" width="40">
+                    <a href="#" class="nav__link">Usuario</a>
+                </div>
+            </li>
 
-      <ul class="ulMenuFirst">
-        <li tabindex="0" class="liMenuSecond"><a href="#" class="TagAMenu">Usuario</a></li>
-        <li tabindex="1"  class="liMenuSecond"><a href="#" class="TagAMenu">Insumos</a></li>
-        <li tabindex="2"  class="liMenuSecond"><a href="#" class="TagAMenu">Producción</a></li>
-        <li tabindex="3"  class="liMenuSecond"><a href="#" class="TagAMenu">Novedades</a></li>
-        <li tabindex="4"  class="liMenuSecond" id="viewMore">
-          <a href="#" class="TagAMenu" >
-            Ver Mas
-          </a>
-          <ul class="subUlSecond" id="SubMenuFirst">
-              <a href="#" class="TagAMenu"><li class="liMenuSecond">SubMenu 1</li></a>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-
-        <li><a href="">Usuario</a></li>
-        <li><a href="">Insumos</a></li>
-
-
-        <li> <!--ACA COMIENZA EL MENU CON SUB MENUS DE PRODUCCION -->
-          <a href="">Producción</a> 
-
-          <ul><!--ACA COMIENZA SUB MENU GESTION DE PRODUCCION -->
-            <a href="">Gestión de Producción </a>
-          </ul>
-
-          <ul><!--ACA COMIENZA EL  SUB MENU GESTION DE MAQUINAS -->
-            <a href="">Gestión de Máquinas</a>
-          </ul>
-
-          <ul><!--ACA COMIENZA EL SUB MENU DE PROGRAMACION -->
-            <a href="">Gestión de Programación</a>
-          </ul>
-        </li><!--fINALIZA EL MENU CON SUS SUB MENUS -->
-
-        <li><a href="">Novedades</a></li><!--ACA Finaliza Novedades -->
-
-        <li><!--ACA COMIENZA EL MENU CON SUB MENUS DE Detalles -->
-
-          <ul><!--ACA COMIENZA EL SUB MENU EFICACIA DE EMPLEADOS -->
-            <a href="">Eficacia de Empleados</a>
-          </ul>
-
-          <ul> <!--ACA COMIENZA EL SUB MENU EFICIENCIA DE PRODUCCION -->
-            <a href="">Eficiencia de Producción</a>
-          </ul>
-
-          <ul><!--ACA COMIENZA EL SUB MENU CESE DE ACTIVIDADES -->
-            <a href="">Cese de Actividades</a>
-          </ul>
-
-
-        </li>
-
-
-
-      </ul>
-
-             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Aquí puedes escribir tu comentario 
-
-    ESTO ES DE OTRO SIDE BAR
-      <div id="sidebar">
-        <div class="toggle-btn">
-          <span>&#9776</span>
-        </div>
-        <ul>
-          <li>
-            <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
+            
+            <li class="list__item">
+              <div class="list__button">
+                  <img src="../Img/IconInsumos.ico" class="list__img"height="40" width="40">
+                  <a href="#" class="nav__link">Insumos</a>
+              </div>
           </li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="../Img/IconGestion.ico" class="list__img" height="40" width="40">
+                    <a href="#" class="nav__link">Producción</a>
+                    
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Gestión de Productos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Gestión de Maquinas</a>
+                    </li>
+                    <li class="list__inside">
+                      <a href="#" class="nav__link nav__link--inside">Gestión de Programación</a>
+                  </li>
+
+                </ul>
+
+            </li>
+
+
+            <li class="list__item">
+              <div class="list__button">
+                  <img src="../Img/IconNovedades.ico" class="list__img" height="40" width="40">
+                  <a href="#" class="nav__link">Novedades</a>
+              </div>
+          </li>
+
+
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="../Img/Eficacia.ico" class="list__img" height="40" width="40">
+                    <a href="#" class="nav__link">Eficacia</a>
+                   
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Eficacia de empleados</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Eficiencia de Producción</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Cese de Actividades</a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+           
+
         </ul>
-      </div>
-      <script src="SideBar.js" charset="utf-8"></script>
-
--->
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
+    </nav>
 
     
+    <script src="../Js/SideBar.js"></script>
 </body>
 </html>

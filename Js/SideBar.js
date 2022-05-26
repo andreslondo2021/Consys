@@ -1,11 +1,17 @@
-// sidebar toggle ESTO ES DE OTRO SIDE BAR
+let listElements = document.querySelectorAll('.list__button--click');
 
-/* 
-const btnToggle = document.querySelector('.toggle-btn');
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', ()=>{
+        
+        listElement.classList.toggle('arrow');
 
-btnToggle.addEventListener('click', function () {
-  console.log('clik')
-  document.getElementById('sidebar').classList.toggle('active');
+        let height = 0;
+        let menu = listElement.nextElementSibling;
+        if(menu.clientHeight == "0"){
+            height=menu.scrollHeight;
+        }
+
+        menu.style.height = `${height}px`;
+
+    })
 });
-
-*/
